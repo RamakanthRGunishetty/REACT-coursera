@@ -7,10 +7,8 @@ import './App.css';
 import { BrowserRouter } from 'react-router-dom';
 
 import { Provider } from 'react-redux';
-
 import { ConfigureStore } from './redux/configureStore';
-
-const store = ConfigureStore(); 
+const store = ConfigureStore();
 
 class App extends Component{
 
@@ -19,13 +17,12 @@ class App extends Component{
 
     return(
       <Provider store={store}>
-      <BrowserRouter>
-        <div>
-          <Main />
-        </div>      
-      </BrowserRouter>
+        <BrowserRouter>
+          <div>
+            <Main />
+          </div>      
+        </BrowserRouter>
       </Provider>
-
     );
 
   }
